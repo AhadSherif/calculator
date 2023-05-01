@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calci.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Pacifico&family=Poppins:ital,wght@0,200;0,300;1,200;1,300&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class='dad'>
+    <div class="mom">
+<input type="text" id="output-calci" placeholder = "0">
+<button onclick = "Clear()">C</button>
+<button onclick ="del()">←</button>
+<button onclick = "display('.')">.</button>
+<button onclick = "display('*')">x</button>
+<button onclick = "display('7')">7</button>
+<button onclick = "display('8')">8</button>
+<button onclick = "display('9')">9</button>
+<button onclick = "display('/')">/</button>
+<button onclick = "display('4')">4</button>
+<button onclick = "display('5')">5</button>
+<button onclick = "display('6')">6</button>
+<button onclick = "display('-')">-</button>
+<button onclick = "display('1')">1</button>
+<button onclick = "display('2')">2</button>
+<button onclick = "display('3')">3</button>
+<button onclick = "display('+')">+</button>
+<button onclick = "display('0')">0</button>
+<button onclick = "display('00')">00</button>
+<button   onclick = "equalto()"class="eqaul-button">=</button>
+</div>
+</div>
+
+
+
+<script>
+
+let outputView = document.getElementById("output-calci");
+function display(num){
+    outputView.value += num; 
+}
+function equalto(){
+    try{
+        outputView.value = eval(outputView.value);
+    }
+    catch(eror){
+        alert("Only numbers are allowed")
+    }
+}
+function Clear(){
+    outputView.value = "";
+}
+function del(){
+    outputView.value = outputView.value.slice(0,-1);
+}
+
+</script>
+
+    
+    
+</body>
+</html>

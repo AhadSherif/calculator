@@ -1,0 +1,133 @@
+/* *{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    background-color:gray;
+    font-family: sans-serif;
+    outline:none;
+}
+.container{
+    height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center
+}
+.calculator{
+    padding:15px;
+    background-color:gray;
+    border-radius: 30px; 
+    box-shadow: inset 5px 5px 12px #ffffff,
+                   5px 5px 12px rgba(0,0,0,.16);
+                   display:grid;
+                   grid-template-columns: repeat(4,68px);
+    
+}
+input{
+    grid-column: span 4;
+    height:70px;
+    width:260px;
+    background-color:gray;
+    box-shadow: inset -5px -5px 12px #ffffff,
+                inset 5px 5px 12px rgba(0,0,0,.16);
+                /* border:none; */
+                /* border-radius:30px;
+                font-size:30px;
+                margin-top:20px;
+                margin-bottom:20px;
+                padding:20px; */
+/* } */
+/* button{
+    /* height:48px; */
+    /* width:48px;
+    background-color: gray; */
+    /* border:none; */
+    /* box-shadow: -5px -5px 12px #ffffff,
+                 5px 5px 12px rgba(0,0,0,.16);
+    border-radius:50px;
+    margin:8px;
+    font-size:16px; */
+/* } */
+/* .equal{
+    width: 100px; */
+/* } */ 
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    background-color: hsla(206°, 23%, 94%);
+    outline:none;
+}
+.dad{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:100vh;
+    border:none;
+    font-family: 'Roboto', sans-serif;
+
+    
+}
+.mom{
+
+    display:grid;
+    grid-template-columns: repeat(4,82px);
+    background-color:gainsboro;
+    border-radius: 10px;
+    padding: 35px;
+    /* padding-right: 20px; */
+
+    
+   
+}
+input{
+    grid-column:span 4;
+    height:60px;
+    width:297px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 8px;
+    font-size:52px;
+    padding: 15px;
+    background-color: #80808096;
+    color: hsl(0deg 3% 29%);
+    border:none;
+
+}
+button{
+    
+    border:none;
+    height:45px;
+    width:45px;
+    /* padding-left:5px; */
+    margin:8px;
+    font-size:20px;
+    margin-bottom: 20px;
+    background-color: gainsboro;
+    
+    
+}
+.eqaul-button{
+    width:153px;
+    height:38px;
+    background-color: blue;
+    color: white;
+    border:none;
+    margin-top: 13px;
+
+}
+.mom button:nth-child(2)  {
+    
+    color: red;
+  }
+  .mom button:nth-child(4) {
+    
+    color:blue;
+    padding-bottom:7px;
+    
+    
+  }
+  .mom button:nth-child(4n+1) {
+    
+    color:blue;
+  }
